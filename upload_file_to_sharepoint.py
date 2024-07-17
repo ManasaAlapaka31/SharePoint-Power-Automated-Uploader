@@ -15,11 +15,12 @@ def send_mail(file_name: str,sharepoint_name: str, file_link: str,script_name: s
 
 def upload_file_to_sharepoint_via_pa(file_path,sharepoint_name,script_name,description):
 	file_name = os.path.basename(file_path)
-	
-	folder_name = "GIVE FOLDER NAME HERE"
 	msg=f"Script: {script_name}\n Description: {description}"
 	
+	#You can plase these two variables in config file and then access here
+	folder_name = "GIVE FOLDER NAME HERE"
 	url = "YOUR POWER AUTOMATE URL"
+	
 	url += f"&folderpath={folder_name}&filename={file_name}&msg={msg}"
 	
 	with open(file_path, 'rb') as file_obj:
