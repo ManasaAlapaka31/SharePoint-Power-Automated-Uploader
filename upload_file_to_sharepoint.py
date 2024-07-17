@@ -18,7 +18,7 @@ def upload_file_to_sharepoint_via_pa(file_path,sharepoint_name,script_name,descr
 	msg=f"Script: {script_name}\n Description: {description}"
 	
 	#You can plase these two variables in config file and then access here
-	folder_name = "GIVE FOLDER NAME HERE"
+	folder_name = "GIVE SHREPOINT FOLDER NAME HERE"
 	url = "YOUR POWER AUTOMATE URL"
 	
 	url += f"&folderpath={folder_name}&filename={file_name}&msg={msg}"
