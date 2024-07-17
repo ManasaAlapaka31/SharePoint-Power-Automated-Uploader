@@ -1,7 +1,5 @@
 # SharePoint-Power-Automated-Uploader
 
-`upload_file_to_sharepoint.py`, designed to upload files to SharePoint via a Power Automate flow and send email notifications & Teams channel notification upon successful uploads.
-
 ## Overview
 
 The `upload_file_to_sharepoint.py` script automates the process of uploading files to a specific folder in SharePoint and sends an email notification & Teams channel notification. This is achieved by interfacing with a custom Power Automate flow that handles the file upload.
