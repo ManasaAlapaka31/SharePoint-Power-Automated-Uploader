@@ -16,10 +16,7 @@ def send_mail(file_name: str,sharepoint_name: str, file_link: str,script_name: s
 def upload_file_to_sharepoint_via_pa(file_path,sharepoint_name,script_name,description):
 	file_name = os.path.basename(file_path)
 	
-	folder_name = "/Shared Documents/General/Manasa_Test_Folder/"
-	# folder_name = "Report"
-	script_name="BEX-185"
-	description="Script to Extract BAN only Embargo Records"
+	folder_name = "GIVE FOLDER NAME HERE"
 	msg=f"Script: {script_name}\n Description: {description}"
 	
 	url = "YOUR POWER AUTOMATE URL"
@@ -43,7 +40,6 @@ def upload_file_to_sharepoint_via_pa(file_path,sharepoint_name,script_name,descr
 	if response.status_code == 200:
 		send_mail(file_name, sharepoint_name, file_link, script_name, description)
 		
-
 
 if __name__ == "__main__":
     if len(sys.argv) ==5: 
